@@ -88,6 +88,7 @@ public:
 	/// @{
 	virtual Status get(const std::string &key, std::string *val) = 0;
 	virtual Status set(const std::string &key, const std::string &val) = 0;
+    virtual Status del(const std::string &key) = 0;
 private:
 	// No copying allowed
 	Client(const Client&);
